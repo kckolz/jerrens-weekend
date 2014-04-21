@@ -1,0 +1,24 @@
+<div class="ui page grid">
+  <div class="column">
+    <div class="ui transition">
+        <h4 class="ui inverted header">
+          Let us know your name and what you are here to do
+        </h4>
+        <div class="ui form segment" ng-class="{error: hasVoted}">
+          <div class="ui error message">
+            <div class="header">Nope</div>
+            <p>You can only vote once mother fucker</p>
+          </div>
+          <div class="field">
+            <label>What is your name?</label>
+            <input type="text" ng-model="name">
+          </div>
+          <div class="ui buttons">
+            <div class="ui button" ng-click="canVote()">Vote</div>
+            <div class="or"></div>
+            <div class="ui positive button" ng-click="goToRecord()">Record</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

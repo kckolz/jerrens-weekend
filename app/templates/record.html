@@ -1,0 +1,45 @@
+<div class="ui page grid">
+  <div class="column">
+    <h4 class="ui top attached header">
+      Record what he did.
+    </h4>
+    <div class="ui form segment attached">
+      <div class="field">
+        <label>How many music videos did he play?</label>
+        <input type="number" ng-model="record.videosPlayed">
+      </div>
+      <div class="inline field">
+        <div class="ui toggle checkbox">
+          <input type="checkbox" ng-model="record.didPiss">
+          <label>Did he piss himself?</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>How many hangmans did he do?</label>
+        <input type="number" ng-model="record.hangmansPerformed">
+      </div>
+      <div class="field">
+        <label>How much money did he spend?</label>
+        <input type="number" ng-model="record.moneySpent">
+      </div>
+      <div class="inline field">
+        <div class="ui toggle checkbox">
+          <input type="checkbox" ng-model="record.brokePhone">
+          <label>Did he break his phone?</label>
+        </div>
+      </div>
+      <div class="inline field">
+        <div class="ui toggle checkbox">
+          <input type="checkbox" ng-model="record.payedBills">
+          <label>Did he pay his bills before leaving? </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>How many times did he tell someone he loves them?</label>
+        <input type="number" ng-model="record.loveConfessed">
+      </div>
+      
+      <div class="ui blue submit button" ng-click="submitRecord()">Record</div>
+    </div>
+  </div>
+</div>
